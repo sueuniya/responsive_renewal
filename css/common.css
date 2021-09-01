@@ -1,0 +1,98 @@
+:root {
+  --point-red:#db0007;
+  --point-yel: #ffbc0d;
+  --point-light: #f5cc65;
+  --sub-gray:#cccccc;
+  --sub-blk:#333;
+  --sub-letter:#ffffff;
+  --bg: rgb(255, 252, 247);
+  --main-bg: #0e1c2b;
+  --sec-main-bg: #0B2A4F;
+  --sub-bg: rgb(255, 252, 247);
+}
+body {
+  height: 100%;
+  overflow-x: hidden;
+
+}
+
+.blind{
+position: absolute;
+width: 1px; height: 1px;
+overflow: hidden;
+clip: rect(0 0 0 0 );
+margin: -1px;
+}
+
+.clear::after{
+  content: "";
+  display:block;
+  clear:both;
+}
+
+.swiper-container{
+  width: 100%;
+  height: 100%;
+  ;
+}
+
+.btn_yellow{
+  display: block; color: var(--point-yel);
+  padding: 10px 60px; border-radius: 20px;
+  border: 1px solid var(--point-yel);
+  transition: all .3s;
+}
+.btn_yellow:hover{
+  background-color: var(--point-yel);
+  color: #f1f1f1;
+}
+
+.move_btn {
+  position: relative;
+}
+.move_btn i{
+  width: 80px;height: 80px;
+  display: inline-block;
+  text-align: center;
+  line-height: 82px;
+  font-weight: bold;
+  border-radius: 150px;
+  border: 1.5px solid var(--point-red);
+  color: var(--point-red);
+  position: relative;
+  font-size: 20px;
+  transition: all .3s;
+}
+
+.move_btn span {
+  left: 70px;
+  padding: 5px 0;
+  font-weight: bold;
+  background-color: none;
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  transition: all .3s;
+
+}
+.move_btn:hover i{
+  background-color: var(--point-red);
+  color: #f1f1f1;
+}
+.move_btn:hover span {
+  background-color: transparent;
+  left: 90px;
+}
+
+.move_btn.on i{
+  background-color: var(--point-red);
+  color: #f1f1f1;
+}
+.move_btn.on span {
+  background-color: transparent;
+  margin-left: 30px;
+}
+
+.title{
+  /* font-family: 'Atkinson Hyperlegible', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+}

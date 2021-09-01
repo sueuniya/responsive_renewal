@@ -1,0 +1,305 @@
+/*
+  가장중요한 조건
+  가로스롤은 절대 생기면 안된다.
+  가로스크롤이 생기는이유는
+  - 위드가 살이있는영역 ex)1200 1000px
+  - absolute ->부모한테 무조건 overflow hidden을 줘야됨
+  모바일 확인은 최고 작은 사이즈인 320 (크롬모바일 아이폰se) 확인시 잘나오묜 끝.
+ */
+
+/* 실콘텐츠 + 100 */
+/* 1300 */
+
+@media screen and (max-width: 1300px) {
+  
+  /* header */
+  header nav .menu .sns{max-width: 190px;  }
+
+  header .menu{left: 20%;}
+  
+  /* main */
+  .history {padding: 150px 30px;}
+  .works .inner{padding: 0 30px;}
+  .works_bottom ul li img {height: 60px;}
+  .works_bottom ul li .txt_wrap em{font-size: 35px;}
+
+   /* product  */
+  .product .product_picture img{max-width: 600px;}
+
+
+  /* .mcdelivery */
+  .mcdelivery .txt_bg{font-size: 100px;}
+  .mcdelivery .txt_bg .txt01{left: -25%;}
+  .news{padding: 70px 30px; }
+
+
+  /* footer */
+  footer .inner{padding: 0 30px;}
+
+}
+
+
+/*
+테블릿
+중대적인 레이아웃 변화
+폰트사이즈 줄여준다 아래와같은룰로
+*/
+@media screen and (max-width: 1024px) {
+
+
+  /* loader  */
+  .loader .txt_wrap{ font-size: 65px;  }
+  .loader .txt_wrap img{  max-width: 90px;  }
+
+  /* header */
+
+  header nav { background: var(--bg); }
+  header nav::after{ background:none; }
+
+  header nav .menu{ color: #333;left: 10%; } 
+  header nav .main_menu{ font-size: 30px; }
+  header nav .main_menu::before, 
+  header nav .main_menu::after{
+    background-color: #6d6d6d;
+  }
+  header nav ul li .sub_menu li a{ color: #6d6d6d; } 
+  header nav ul li .sub_menu li:hover a{ color: var(--point-yel); }
+
+  header nav .sns{ display: none; }
+ 
+
+  /* scroll  */
+  .main_vis .mouse_bg {width: 120px;height: 120px; }
+  .main_vis .mouse_wheel{ width: 80px;height: 80px; }
+
+
+  .history .txt_wrap h2{font-size: 25px;line-height: 1.2;  }
+  .history .txt_wrap p{font-size: 14px;  }
+
+  .move_btn i { width: 70px;height: 70px;  line-height: 70px;  }
+  .move_btn span{  font-size: 14px;  }
+
+  /* work */
+
+  .works_bottom ul { justify-content: center;  }
+  .works_bottom ul li {  width: calc((100% - 40px) /3);  }
+
+  /* logo history  */
+  .history_logo ul li{  min-width: 120px; }
+
+
+  /* product  */
+
+  .product h2{  font-size: 50px;  }
+  .product .desc span{ font-size: 20px;  }
+  .product .product_picture img{ max-width: 520px; }
+
+  /* .mcdelivery  */
+  .mcdelivery{ padding: 180px 20px;  }
+  .mcdelivery .title{ font-size: 55px;  }
+  .mcdelivery p { font-size: 14px;  }
+  .mcdelivery .img_wrap img{  min-width: 230px;  }
+  .mcdelivery .txt_bg{  font-size: 80px; }
+
+  /* new menu  */
+
+  .new_menu .txt_wrap h3{ font-size: 50px;  }
+  .new_menu .txt_wrap em{ font-size: 40px;  }
+
+  /* news  */
+  .news .title{ font-size: 40px;  }
+  .news ul li { width: calc(100% / 2); }
+
+
+  /* footer  */
+  footer .inner .footer_copyright .top li a{
+    font-size: 12px;
+  }
+
+}
+
+/*
+ 모바일
+ *대대적 레이아웃 변화
+ 사이드 패딩 15~20
+ 대폰트 font-size: 38~28
+ 중폰트 18~28
+ 소폰트 12~ 16
+ 웬만한 레이아웃은 1줄 아니면 2줄
+*/
+@media screen and (max-width: 768px) {
+
+  /* .loader  */
+  .loader .txt_wrap{ font-size: 30px;  }
+  .loader .txt_wrap img{  max-width: 55px;  }
+
+
+  /* header  */
+
+   header{height: 60px;}
+
+  header>.logo{ width: 50px;height: 40px;  }
+  header nav{  padding-top: 60px; overflow: auto;  }
+  header nav ul{ width: 80vw;  }
+  header nav ul li .sub_menu li { display: inline-block; min-width: 160px;  margin: 0;   } 
+  
+
+
+  /* mouse  */
+  .main_vis .mouse_bg{ width: 90px;height: 90px;  }
+  .main_vis .mouse_wheel { width: 60px;height: 60px;  }
+  .main_vis .mouse_wheel span{  font-size: 10px;  }
+  .main_vis .mouse_wheel i { font-size: 16px; }
+
+  .history{padding: 70px 30px;}
+  .history .inner{flex-wrap: wrap; flex-direction: column-reverse; }
+  .history .inner .img_wrap{padding-bottom: 40%; width: 100%;}
+  .history .txt_wrap {  width: 100%;  margin-top: 20px;  padding-right: 0;}
+  .history .txt_wrap h2{ font-size: 16px}
+  .history .txt_wrap p{ font-size: 13px;}
+
+  /* work  */
+  .works .title{ text-align: center; padding: 70px 0 20px;  }
+
+  .works .bg_txt{  top: 3%;  font-size: 55px;  }
+  .works .inner {  padding: 0 40px 50px;  }
+  .works_bottom ul{justify-content: end;}
+  .works_bottom ul li{  width: 50%;   padding: 22px 0; }
+  .works_bottom ul li .txt_wrap em {font-size: 22px;}
+
+/* logo history  */
+.history_logo .title{ font-size: 30px;}
+.history_logo p{  font-size: 14px;}
+
+
+/* .product  */
+
+  .product{flex-wrap: wrap;}
+  .product .txt_wrap {width: 100%;}
+  .product h2 {font-size: 30px;}
+  .product .desc span{ font-size: 15px;}
+  
+  .product .product_picture{top: -40px; width: 100%;}
+  .product .product_picture img{
+    max-width: 420px;
+  }
+
+
+
+  /* mcdelivery  */
+  
+  .mcdelivery{  flex-wrap: wrap;  flex-direction: column-reverse;  padding: 120px 0;  }
+  .mcdelivery .title{  font-size: 38px;  }
+  .mcdelivery .img_wrap{ width: 100%;  padding-bottom: 35%;  }
+  .mcdelivery .txt_wrap{  margin-top: 140px;  text-align: center;  }
+  .mcdelivery .txt_bg .txt01{ left: -10%;  }
+  .mcdelivery .txt_bg .txt02{  right: -60%;  }
+  .mcdelivery .img_wrap img{ min-width: 200px;  }
+
+  /* new menu  */
+  .new_menu .txt_wrap h3{ font-size: 25px; line-height: 2;  }
+  .new_menu .txt_wrap em{font-size: 20px;}
+  .new_menu .txt_wrap span{ font-size: 18px; }
+
+
+  .news {padding: 70px 10px;}
+  .news ul li { width: 100%; }
+
+  .news .title{ font-size: 27px;  }
+  .news .btn:hover::after {
+    width: 75px;
+  }
+
+  /* footer */
+  footer .inner {padding: 20px 30px;}
+  footer .inner .menu{  padding: 0; text-align: center; }
+  footer .inner .menu{  display: none;  }
+  footer .inner .footer_copyright .top{ flex-wrap:wrap ; padding: 5px 0;
+  }
+  
+  footer .inner .footer_copyright .top li a{  margin: 5px 0;   }
+  footer .inner .footer_copyright .bottom{  flex-wrap: wrap;  }
+  footer .inner .footer_copyright span,
+  footer .inner .footer_copyright a{  width: 100%;  padding: 5px 0;  }
+  footer .inner .footer_copyright .copy{ font-size: 10px; color: #8e8e8e;margin-top: 20px;}
+}
+@media screen and (max-width: 450px) {    
+    
+    /* header  */
+    
+  header{height: 50px;}
+  header>.logo{width: 30px; height: 40px;
+  }
+  header .header_quick_menu a {display: none;}
+
+  header .burger_box{width: 25px;height: 25px;}
+  header .burger_box .menu_line span{width: 15px;}
+  header .burger_box .menu_line::before, header .burger_box .menu_line::after{
+    width: 25px;
+  }
+  header .burger_box .menu_line::before{top: 4px;}
+  header .burger_box .menu_line::after{top: 21px;}
+
+  header.on .logo{width: 30px; height: 40px;}
+
+  header.on{height: 50px;}
+
+  header nav ul li .sub_menu li a{text-align: left;}
+
+  /* main  */
+  .main_vis h2{font-size:16px;}
+
+  /* history  */
+  .history{padding: 30px 30px;}
+  .history .txt_wrap p{
+    text-align: left;
+    word-break: break-all;
+  }
+  .move_btn i{width: 45px; height: 45px; line-height: 45px;}
+  .move_btn span {left: 30px;}
+  .move_btn:hover span{left: 40px;}
+
+  /* work  */
+  .works .inner{padding: 0 25px;  }
+  .works_bottom ul li{width: 100%; display: flex; align-items: center;}
+  .works_bottom ul li img {float: left; height: 50px;}
+  .works_bottom ul li .txt_wrap {width: 100%;}
+  /* history_logo  */
+
+  .history_logo ul li{height: auto;min-width: 120px; padding: 15px 0; }
+  .history_logo .title{font-size: 20px; padding: 50px 0 10px;  }
+
+
+
+
+
+  /* product  */
+  .product .txt_wrap img{width: 75px;margin-bottom: 15px;  }
+  .product h2 {margin-bottom: 15px  }
+  .product .product_picture img{ max-width: 380px; }
+
+  /* mcdelivery  */
+  .mcdelivery .img_wrap img{ min-width: 150px;}
+
+  .mcdelivery .txt_bg strong{font-size: 60px;}
+  .mcdelivery p {display: none;}
+  .mcdelivery em{margin: 5px 60px; word-break: keep-all; line-height: 1.5;
+  }
+  .mcdelivery .txt_wrap .btn{
+    width: 130px; font-size: 12px;
+  }
+  .mcdelivery .txt_wrap .btn2{
+    margin-left: 5px;
+  }
+
+  /* .new_menu  */
+  .new_menu .txt_wrap .btn{padding: 10px 30px;}
+
+  /* news  */
+  .news .title{padding-bottom: 20px;}
+  .news .txt_wrap .news_title{font-size: 15px;}
+  .news .txt_wrap p {font-size: 12px;}
+  .news .btn {font-size: 13px;}
+}
+
+
