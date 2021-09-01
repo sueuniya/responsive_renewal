@@ -238,23 +238,23 @@ let tl = gsap.timeline({
 });
 tl.fromTo(".product .txt01  , .product_picture .product01", {opacity:0},{opacity: 1, delay:1, duration: 3})
 .to(".product .txt01 ", {y: '-100%',opacity: 0, duration: 3})
-.to(".product_picture .product01", {y: '-150%',opacity: 0, duration: 3})
+.to(".product_picture .product01", {opacity: 0, duration: 3})
 
 .fromTo(".product .txt02 , .product_picture .product02 ", {opacity:0},{opacity: 1, delay:1, duration: 3})
 .to(".product .txt02", {y: '-100%',opacity: 0, duration: 3})
-.to(".product_picture .product02 ", {y: '-150%',opacity: 0, duration: 3})
+.to(".product_picture .product02 ", {opacity: 0, duration: 3})
 
 .fromTo(".product .txt03 , .product_picture .product03", {opacity:0},{opacity: 1, delay:1,duration: 3})
 .to(".product .txt03", {y: '-100%',opacity: 0, duration: 3})
-.to(".product_picture .product03", {y: '-150%',opacity: 0, duration: 3})
+.to(".product_picture .product03", {opacity: 0, duration: 3})
 
 .fromTo(".product .txt04 , .product_picture .product04", {opacity:0},{opacity: 1, delay:1,duration: 3})
 .to(".product .txt04", {y: '-100%',opacity: 0, duration: 3})
-.to(".product_picture .product04", {y: '-150%',opacity: 0, duration: 3})
+.to(".product_picture .product04", {opacity: 0, duration: 3})
 
 .fromTo(".product .txt05 , .product_picture .product05", {opacity:0},{opacity: 1, delay:1,duration: 3})
 .to(".product .txt05", {y: '-100%'})
-.to(".product_picture .product05", {y: '-150%',opacity: 0, duration: 3})
+.to(".product_picture .product05", {opacity: 0, duration: 3})
 
 
 
