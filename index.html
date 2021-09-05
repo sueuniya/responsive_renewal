@@ -504,23 +504,25 @@
 
     </div>    
   </footer>
-</body>
-
-<script>
+  
+  <script>
 	
-document.onreadystatechange = function (){
-if (document.readyState == "complete"){ 
-var container = document.querySelector('.news ul');
-var msnry = new Masonry( container ); msnry.reloadItems() 
-}}
+	document.onreadystatechange = function (){
+	if (document.readyState == "complete"){ 
+	var container = document.querySelector('.news ul');
+	var msnry = new Masonry( container ); msnry.reloadItems() 
+	}}
 
 
 
-$('.news ul').masonry({
-  itemSelector: '.news ul li',
-  // columnWidth: 160
-});
+	$('.news ul').masonry({
+	  itemSelector: '.news ul li',
+	  // columnWidth: 160
+	});
 
 
 </script>
+</body>
+
+
 </html>
