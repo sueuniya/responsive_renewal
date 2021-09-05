@@ -16,7 +16,7 @@ body.hidden{
   transform: translate(-50%,-50%);
   color: var(--bg);
   font-size: 80px;
-  font-weight:550;
+  font-weight:500;
   font-family: 'Atkinson Hyperlegible', sans-serif;
   opacity: 0;
   animation: txt 2s forwards;
