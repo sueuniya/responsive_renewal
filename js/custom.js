@@ -270,17 +270,17 @@ let tlNewmenu = gsap.timeline({
   }
 });
 
-tlNewmenu.fromTo(".new_menu .txt01", {opacity:0},{opacity: 1, delay:1,  })
+tlNewmenu.fromTo(".new_menu .txt01", {opacity:0},{opacity: 1, delay:1, duration: 3 })
 .to(".new_menu .txt01", {y: '-200%',opacity: 0, scale:.8})
-.fromTo(".new_menu .txt02", {opacity:0},{opacity: 1, delay:1,  })
+.fromTo(".new_menu .txt02", {opacity:0},{opacity: 1, delay:1,duration: 3  })
 .to(".new_menu .txt02", {y: '-200%',opacity: 0, scale:.8})
-.fromTo(".new_menu .txt03", {opacity:0},{opacity: 1, delay:1,  })
+.fromTo(".new_menu .txt03", {opacity:0},{opacity: 1, delay:1,duration: 3  })
 .to(".new_menu .txt03", {y: '-200%',opacity: 0, scale:.8})
-.fromTo(".new_menu .txt04", {opacity:0},{opacity: 1, delay:1 })
+.fromTo(".new_menu .txt04", {opacity:0},{opacity: 1, delay:1,duration: 3 })
 .to(".new_menu .txt04", {y: '-200%',opacity: 0, scale:.8})
-.fromTo(".new_menu .txt05", {opacity:0},{opacity: 1, delay:1,  })
+.fromTo(".new_menu .txt05", {opacity:0},{opacity: 1, delay:1,duration: 3 })
 .to(".new_menu .txt05", {y: '-200%',opacity: 0, scale:.8})
-.fromTo(".new_menu .txt06 , .new_menu .txt_wrap .btn",  {opacity:0},{opacity: 1, delay:1 })
+.fromTo(".new_menu .txt06 , .new_menu .txt_wrap .btn",  {opacity:0},{opacity: 1, delay:1,duration: 3 })
 
 
 
