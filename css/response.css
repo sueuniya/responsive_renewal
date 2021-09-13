@@ -163,8 +163,8 @@
 
   .works .bg_txt{  top: 3%;  font-size: 55px;  }
   .works .inner {  padding: 0 40px 50px;  }
-  .works_bottom ul{justify-content: end;}
-  .works_bottom ul li{  width: 50%;   padding: 22px 0; }
+  .works_bottom ul{justify-content: center;}
+  .works_bottom ul li{  padding: 22px 0; }
   .works_bottom ul li .txt_wrap em {font-size: 22px;}
 
 /* logo history  */
