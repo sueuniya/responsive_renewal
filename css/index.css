@@ -16,7 +16,7 @@ body.hidden{
   transform: translate(-50%,-50%);
   color: var(--bg);
   font-size: 80px;
-  font-weight:500;
+  font-weight:600;
   font-family: 'Atkinson Hyperlegible', sans-serif;
   opacity: 0;
   animation: txt 2s forwards;
@@ -105,8 +105,9 @@ body.hidden{
 .main_vis .mouse_wheel span {
   display: block; width: 100px; font-size: 14px;
 }
-.main_vis .mouse_wheel i {
-  position: relative;
+.main_vis .mouse_wheel img {
+  width: 20px; height: 20px;
+  position: relative; top: 10px;
 }
 
 /* history */
