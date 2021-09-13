@@ -39,7 +39,7 @@ $(function(){
     y:'100%',
   });
   
-  gsap.to(".main_vis .mouse_bg img" , {
+  gsap.to(".main_vis .mouse_bg .mouse_wheel_bg" , {
 
     scrollTrigger: {
       trigger: ".main_vis",
