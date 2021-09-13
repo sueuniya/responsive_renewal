@@ -1,6 +1,7 @@
 /*
   가장중요한 조건
   가로스롤은 절대 생기면 안된다.
+
   가로스크롤이 생기는이유는
   - 위드가 살이있는영역 ex)1200 1000px
   - absolute ->부모한테 무조건 overflow hidden을 줘야됨
@@ -162,10 +163,11 @@
   .works .title{ text-align: center; padding: 70px 0 20px;  }
 
   .works .bg_txt{  top: 3%;  font-size: 55px;  }
-  .works .inner {  padding: 0 40px 50px;  }
+  .works .inner {  padding-bottom: 50px;  }
   .works_bottom ul{justify-content: center;}
   .works_bottom ul li{  padding: 22px 0; }
   .works_bottom ul li .txt_wrap em {font-size: 22px;}
+  .works_bottom ul li .txt_wrap p {font-size: 12px;}
 
 /* logo history  */
 .history_logo .title{ font-size: 30px;}
