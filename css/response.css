@@ -151,6 +151,7 @@
   .main_vis .mouse_wheel { width: 60px;height: 60px;  }
   .main_vis .mouse_wheel span{  font-size: 10px;  }
   .main_vis .mouse_wheel i { font-size: 16px; }
+  .main_vis .mouse_wheel img {top: 0;}
 
   .history{padding: 70px 30px;}
   .history .inner{flex-wrap: wrap; flex-direction: column-reverse; }
